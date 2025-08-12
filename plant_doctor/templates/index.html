@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>نتائج التحليل</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>نتائج تحليل صورة النبات</h1>
+    <ul>
+        <li>نسبة اللون الأخضر: {{ green }}%</li>
+        <li>نسبة اللون الأصفر: {{ yellow }}%</li>
+        <li>نسبة اللون البني: {{ brown }}%</li>
+    </ul>
+    <a href="{{ url_for('index') }}">رجوع</a>
+</body>
+</html>
